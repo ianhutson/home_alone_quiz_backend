@@ -6,9 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-q1 = Question.create(text: "Main character's name?", answer: "Kevin")
 
-q1a1 = Answer.create(text: "Kevin", correct: true)
-q1a2 = Answer.create(text: "Marv", correct: false)
-q1a3 = Answer.create(text: "Harry", correct: false)
-q1a4 = Answer.create(text: "Uncle Frank", correct: false)
+q1 = Question.create(text: "Main character's name?")
+Answer.create([{text: "Kevin", correct: true, question_id: q1.id}, {text: "Marv", correct: false, question_id: q1.id}, {text: "Harry", correct: false, question_id: q1.id}, {text: "Uncle Frank", correct: false, question_id: q1.id}])
+
+
