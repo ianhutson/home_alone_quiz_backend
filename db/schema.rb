@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2020_12_14_005949) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "question_id", null: false
-    t.string "category"
     t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
@@ -28,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_12_14_005949) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "pic"
     t.string "difficulty"
-    t.text "correct"
+    t.string "correct"
   end
 
   add_foreign_key "answers", "questions"
