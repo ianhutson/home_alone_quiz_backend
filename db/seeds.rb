@@ -158,11 +158,11 @@ a16 = Answer.create([
         {text: "Frontier", correct: false, question_id: q16.id}
         ]) 
    
-q17 = Question.create(text: "Who flies first class in Home Alone?", correct: "Kevin's parents", difficulty: "medium")
+q17 = Question.create(text: "Who flies first class in Home Alone?", correct: "Kevin's parents and his aunt and uncle", difficulty: "medium")
 a17 = Answer.create([
         {text: "Kevin", correct: false, question_id: q17.id}, 
         {text: "Everyone", correct: false, question_id: q17.id}, 
-        {text: "Kevin's parents and his aunt and uncle", correct: false, question_id: q17.id}, 
+        {text: "Kevin's parents", correct: false, question_id: q17.id}, 
         {text: "Kevin's parents and buzz", correct: false, question_id: q17.id},
         {text: "Fuller", correct: false, question_id: q17.id},
         {text: "The kids", correct: false, question_id: q17.id}
@@ -308,7 +308,7 @@ a31 = Answer.create([
         {text: "Denzel Washington", correct: false, question_id: q31.id}
         ])              
 
-q32 = Question.create(text: "What technique does kevin practice at the hotel pool?", correct: "cannon balls", difficulty: "medium")
+q32 = Question.create(text: "What technique does Kevin practice at the hotel pool?", correct: "cannon balls", difficulty: "medium")
 a32 = Answer.create([
         {text: "pencil dives", correct: false, question_id: q32.id}, 
         {text: "jack knife", correct: false, question_id: q32.id}, 
@@ -318,7 +318,7 @@ a32 = Answer.create([
         {text: "belly flops", correct: false, question_id: q32.id}
         ])    
 
-q33 = Question.create(text: "What technique does kevin practice at the hotel pool?", correct: "cannon balls", difficulty: "medium")
+q33 = Question.create(text: "What technique does Kevin practice at the hotel pool?", correct: "cannon balls", difficulty: "medium")
 a33 = Answer.create([
         {text: "pencil dives", correct: false, question_id: q33.id}, 
         {text: "jack knife", correct: false, question_id: q33.id}, 
@@ -398,12 +398,12 @@ a40 = Answer.create([
         {text: "$122.75", correct: false, question_id: q40.id}
         ])    
 
-q40 = Question.create(text: "What is Kevin's favorite flavor of pizza?", correct: "plain cheese", difficulty: "medium")
-a40 = Answer.create([
-        {text: "supreme", correct: false, question_id: q40.id}, 
-        {text: "extra cheese", correct: false, question_id: q40.id}, 
-        {text: "mushroom", correct: false, question_id: q40.id}, 
-        {text: "pineapple", correct: false, question_id: q40.id},
-        {text: "meat lover's", correct: false, question_id: q40.id},
-        {text: "pepperoni", correct: false, question_id: q40.id}
+q41 = Question.create(text: "What is Kevin's favorite flavor of pizza?", correct: "plain cheese", difficulty: "medium")
+a41 = Answer.create([
+        {text: "supreme", correct: false, question_id: q41.id}, 
+        {text: "extra cheese", correct: false, question_id: q41.id}, 
+        {text: "mushroom", correct: false, question_id: q41.id}, 
+        {text: "pineapple", correct: false, question_id: q41.id},
+        {text: "meat lover's", correct: false, question_id: q41.id},
+        {text: "pepperoni", correct: false, question_id: q41.id}
         ])  
