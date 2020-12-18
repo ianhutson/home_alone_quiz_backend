@@ -1,5 +1,6 @@
-q1 = Question.create(text: "Why doesn’t Kevin want to sleep with Fuller on the third floor?", correct: "he wets the bed", difficulty: "easy", pic: "/public/photos/18.png")
+q1 = Question.create(text: "Why doesn’t Kevin want to sleep with Fuller on the third floor?", difficulty: "easy", pic: "/public/photos/18.png")
 a1 = Answer.create([
+    {text: "he wets the bed", correct: true, question_id: q1.id},
     {text: "he's annoying", correct: false, question_id: q1.id}, 
     {text: "he snores", correct: false, question_id: q1.id}, 
     {text: "he smells", correct: false, question_id: q1.id}, 
@@ -8,8 +9,9 @@ a1 = Answer.create([
     {text: "he rolls and kicks", correct: false, question_id: q1.id}
     ])
 
-q2 = Question.create(text: "What street do the McCallisters live on?", correct: "Lincoln Ave", difficulty: "hard", pic: "/public/photos/2.png")
+q2 = Question.create(text: "What street do the McCallisters live on?", difficulty: "hard", pic: "/public/photos/2.png")
 a2 = Answer.create([
+    {text: "Lincoln Ave", correct: true, question_id: q2.id}, 
     {text: "Lincoln St", correct: false, question_id: q2.id}, 
     {text: "Washington Ave", correct: false, question_id: q2.id}, 
     {text: "Washington Ln", correct: false, question_id: q2.id}, 
@@ -18,8 +20,9 @@ a2 = Answer.create([
     {text: "Georgia St", correct: false, question_id: q2.id}
     ])
 
-q3 = Question.create(text: "In Home Alone 2, upon arriving at Kevin's aunt and uncle's house, Kevin unveils the schematics for operation _____", correct: "HoHoHo", difficulty: "hard", pic: "/public/photos/30.png")
+q3 = Question.create(text: "In Home Alone 2, upon arriving at Kevin's aunt and uncle's house, Kevin unveils the schematics for operation _____", difficulty: "hard", pic: "/public/photos/30.png")
 a3 = Answer.create([
+        {text: "HoHoHo", correct: true, question_id: q3.id}, 
     {text: "Merry Christmas", correct: false, question_id: q3.id}, 
     {text: "House Defense", correct: false, question_id: q3.id}, 
     {text: "Anti Burglar", correct: false, question_id: q3.id}, 
@@ -28,8 +31,9 @@ a3 = Answer.create([
     {text: "Trench Warfare", correct: false, question_id: q3.id}
     ])
 
-q4 = Question.create(text: "Buzz has a pet _____", correct: "Tarantula", difficulty: "easy", pic: "/public/photos/9.png")
+q4 = Question.create(text: "Buzz has a pet _____", difficulty: "easy", pic: "/public/photos/9.png")
 a4 = Answer.create([
+        {text: "Tarantula", correct: true, question_id: q4.id}, 
     {text: "Dog", correct: false, question_id: q4.id}, 
     {text: "Snake", correct: false, question_id: q4.id}, 
     {text: "Scorpion", correct: false, question_id: q4.id}, 
@@ -38,8 +42,8 @@ a4 = Answer.create([
     {text: "Goldfish", correct: false, question_id: q4.id}
     ])
 
-q5 = Question.create(text: "What did Buzz tell Kevin to pack in Home Alone?", correct: "Toilet paper and water", difficulty: "medium", pic: "/public/photos/6.png")
-a5 = Answer.create([
+q5 = Question.create(text: "What did Buzz tell Kevin to pack in Home Alone?", difficulty: "medium", pic: "/public/photos/6.png")
+a5 = Answer.create([{text: "Toilet paper and water", correct: true, question_id: q5.id}, 
     {text: "Sunscreen and towels", correct: false, question_id: q5.id}, 
     {text: "Batteries and toothpaste", correct: false, question_id: q5.id}, 
     {text: "Toilet paper and toothpaste", correct: false, question_id: q5.id}, 
@@ -48,8 +52,8 @@ a5 = Answer.create([
     {text: "Snacks and water", correct: false, question_id: q5.id}
     ])       
     
-q6 = Question.create(text: "In Home Alone, what is the old man with the shovel's villain name?", correct: "South Bend Shovel Slayer", difficulty: "medium", pic: "/public/photos/11.png")
-a6 = Answer.create([
+q6 = Question.create(text: "In Home Alone, what is the old man with the shovel's villain name?", difficulty: "medium", pic: "/public/photos/11.png")
+a6 = Answer.create([{text: "South Bend Shovel Slayer", correct: true, question_id: q6.id}, 
     {text: "Hash Slinging Slasher", correct: false, question_id: q6.id}, 
     {text: "Darth Shovel", correct: false, question_id: q6.id}, 
     {text: "Pigeon Lady", correct: false, question_id: q6.id}, 
@@ -58,8 +62,8 @@ a6 = Answer.create([
     {text: "The Butcher", correct: false, question_id: q6.id}
     ])    
 
-q7 = Question.create(text: "What year did the shovel man allegedly murder his whole family and half the block?", correct: "1958", difficulty: "medium", pic: "/public/photos/10.png")
-a7 = Answer.create([
+q7 = Question.create(text: "What year did the shovel man allegedly murder his whole family and half the block?", difficulty: "medium", pic: "/public/photos/10.png")
+a7 = Answer.create([ {text: "1958", correct: true, question_id: q7.id}, 
     {text: "1959", correct: false, question_id: q7.id}, 
     {text: "1960", correct: false, question_id: q7.id}, 
     {text: "1957", correct: false, question_id: q7.id}, 
@@ -68,8 +72,8 @@ a7 = Answer.create([
     {text: "1980", correct: false, question_id: q7.id}
     ])      
 
-q8 = Question.create(text: "Little Nero's delivers, ___ minutes or less, or your pizza's free!", correct: "20", difficulty: "hard", pic: "/public/photos/13.png")
-a8 = Answer.create([
+q8 = Question.create(text: "Little Nero's delivers, ___ minutes or less, or your pizza's free!", difficulty: "hard", pic: "/public/photos/13.png")
+a8 = Answer.create([{text: "20", correct: true, question_id: q8.id}, 
     {text: "10", correct: false, question_id: q8.id}, 
     {text: "15", correct: false, question_id: q8.id}, 
     {text: "25", correct: false, question_id: q8.id}, 
@@ -78,8 +82,8 @@ a8 = Answer.create([
     {text: "40", correct: false, question_id: q8.id}
     ]) 
 
-q9 = Question.create(text: "What are the burglar's nicknames in Home Alone?", correct: "Wet Bandits", difficulty: "easy", pic: "/public/photos/26.png")
-a9 = Answer.create([
+q9 = Question.create(text: "What are the burglar's nicknames in Home Alone?", difficulty: "easy", pic: "/public/photos/26.png")
+a9 = Answer.create([{text: "Wet Bandits", correct: true, question_id: q9.id}, 
     {text: "Cheesey Bandits", correct: false, question_id: q9.id}, 
     {text: "Scum Gang", correct: false, question_id: q9.id}, 
     {text: "The Slimeballs", correct: false, question_id: q9.id}, 
@@ -88,8 +92,8 @@ a9 = Answer.create([
     {text: "The Sith", correct: false, question_id: q9.id}
     ]) 
 
-q10 = Question.create(text: "What are the burglar's nicknames in Home Alone 2?", correct: "Sticky Bandits", difficulty: "easy", pic: "/public/photos/44.png")
-a10 = Answer.create([
+q10 = Question.create(text: "What are the burglar's nicknames in Home Alone 2?", difficulty: "easy", pic: "/public/photos/44.png")
+a10 = Answer.create([{text: "Sticky Bandits", correct: true, question_id: q10.id}, 
     {text: "Cheesey Bandits", correct: false, question_id: q10.id}, 
     {text: "Scum Gang", correct: false, question_id: q10.id}, 
     {text: "The Slimeballs", correct: false, question_id: q10.id}, 
@@ -98,8 +102,8 @@ a10 = Answer.create([
     {text: "The Sith", correct: false, question_id: q10.id}
     ]) 
  
-q11 = Question.create(text: "Where does Kevin first speak with old man Marley?", correct: "Church", difficulty: "easy", pic: "/public/photos/32.png")
-a11 = Answer.create([
+q11 = Question.create(text: "Where does Kevin first speak with old man Marley?", difficulty: "easy", pic: "/public/photos/32.png")
+a11 = Answer.create([{text: "Church", correct: true, question_id: q11.id}, 
     {text: "The street", correct: false, question_id: q11.id}, 
     {text: "Toy store", correct: false, question_id: q11.id}, 
     {text: "Grocery store", correct: false, question_id: q11.id}, 
@@ -108,8 +112,8 @@ a11 = Answer.create([
     {text: "His house", correct: false, question_id: q11.id}
     ]) 
 
-q12 = Question.create(text: "In Home Alone, the burglars ride around in a van with what decal?", correct: "Oh-Kay Plumbing and Heating", difficulty: "hard", pic: "/public/photos/26.png")
-a12 = Answer.create([
+q12 = Question.create(text: "In Home Alone, the burglars ride around in a van with what decal?", difficulty: "hard", pic: "/public/photos/26.png")
+a12 = Answer.create([{text: "Oh-Kay Plumbing and Heating", correct: true, question_id: q12.id}, 
     {text: "OK Exterminators", correct: false, question_id: q12.id}, 
     {text: "Holtkamp Heating and Air", correct: false, question_id: q12.id}, 
     {text: "HVAC OK", correct: false, question_id: q12.id}, 
@@ -118,8 +122,8 @@ a12 = Answer.create([
     {text: "Smith and Hamlin Plumbing", correct: false, question_id: q12.id}
     ])         
      
-q13 = Question.create(text: "Where is the polka band heading with their van from the airport?", correct: "Milwaukee", difficulty: "easy", pic: "/public/photos/31.png")
-a13 = Answer.create([
+q13 = Question.create(text: "Where is the polka band heading with their van from the airport?", difficulty: "easy", pic: "/public/photos/31.png")
+a13 = Answer.create([{text: "Milwaukee", correct: true, question_id: q13.id}, 
     {text: "Chicago", correct: false, question_id: q13.id}, 
     {text: "New York", correct: false, question_id: q13.id}, 
     {text: "Vegas", correct: false, question_id: q13.id}, 
@@ -128,8 +132,8 @@ a13 = Answer.create([
     {text: "New Orleans", correct: false, question_id: q13.id}
     ])        
 
-q14 = Question.create(text: "What are the names of the burglars?", correct: "Harry and Marv", difficulty: "easy", pic: "/public/photos/56.png")
-a14 = Answer.create([
+q14 = Question.create(text: "What are the names of the burglars?", difficulty: "easy", pic: "/public/photos/56.png")
+a14 = Answer.create([{text: "Harry and Marv", correct: true, question_id: q14.id}, 
     {text: "Harris and George", correct: false, question_id: q14.id}, 
     {text: "Santiago and Dunbar", correct: false, question_id: q14.id}, 
     {text: "Larry and Moe", correct: false, question_id: q14.id}, 
@@ -138,8 +142,8 @@ a14 = Answer.create([
     {text: "Ron and George", correct: false, question_id: q14.id}
     ])  
 
-q15 = Question.create(text: "What is the name of the main character's father?", correct: "Peter", difficulty: "easy", pic: "/public/photos/14.png")
-a15 = Answer.create([
+q15 = Question.create(text: "What is the name of the main character's father?", difficulty: "easy", pic: "/public/photos/14.png")
+a15 = Answer.create([{text: "Peter", correct: true, question_id: q15.id}, 
     {text: "Paris", correct: false, question_id: q15.id}, 
     {text: "Harry", correct: false, question_id: q15.id}, 
     {text: "Frank", correct: false, question_id: q15.id}, 
@@ -148,8 +152,8 @@ a15 = Answer.create([
     {text: "Jerry", correct: false, question_id: q15.id}
     ])         
 
-q16 = Question.create(text: "What airlines does the family fly in Home Alone?", correct: "American", difficulty: "hard", pic: "/public/photos/23.png")
-a16 = Answer.create([
+q16 = Question.create(text: "What airlines does the family fly in Home Alone?", difficulty: "hard", pic: "/public/photos/23.png")
+a16 = Answer.create([{text: "American", correct: true, question_id: q16.id}, 
         {text: "Delta", correct: false, question_id: q16.id}, 
         {text: "Southwest", correct: false, question_id: q16.id}, 
         {text: "Spirit", correct: false, question_id: q16.id}, 
@@ -158,18 +162,18 @@ a16 = Answer.create([
         {text: "Frontier", correct: false, question_id: q16.id}
         ]) 
    
-q17 = Question.create(text: "Who flies first class in Home Alone?", correct: "Kevin's parents and his aunt and uncle", difficulty: "medium", pic: "/public/photos/23.png")
-a17 = Answer.create([
+q17 = Question.create(text: "Who flies first class in Home Alone?", difficulty: "medium", pic: "/public/photos/23.png")
+a17 = Answer.create([{text: "Kevin's parents and his aunt and uncle", correct: true, question_id: q17.id}, 
         {text: "Kevin", correct: false, question_id: q17.id}, 
         {text: "Everyone", correct: false, question_id: q17.id}, 
         {text: "Kevin's parents", correct: false, question_id: q17.id}, 
-        {text: "Kevin's parents and buzz", correct: false, question_id: q17.id},
+        {text: "Kevin's parents and Buzz", correct: false, question_id: q17.id},
         {text: "Fuller", correct: false, question_id: q17.id},
         {text: "The kids", correct: false, question_id: q17.id}
         ]) 
 
-q18 = Question.create(text: "What is Kevin afraid of in the basement?", correct: "The furnace", difficulty: "easy", pic: "/public/photos/24.png")
-a18 = Answer.create([
+q18 = Question.create(text: "What is Kevin afraid of in the basement?", difficulty: "easy", pic: "/public/photos/24.png")
+a18 = Answer.create([{text: "The furnace", correct: true, question_id: q18.id}, 
         {text: "Demons", correct: false, question_id: q18.id}, 
         {text: "Ghosts", correct: false, question_id: q18.id}, 
         {text: "Spiders", correct: false, question_id: q18.id}, 
@@ -178,8 +182,8 @@ a18 = Answer.create([
         {text: "The drier", correct: false, question_id: q18.id}
         ])         
    
-q19 = Question.create(text: "What is the title of the black and white movie Kevin watches in both movies?", correct: "'Angels with Filthy Souls'", difficulty: "hard", pic: "/public/photos/25.png")
-a19 = Answer.create([
+q19 = Question.create(text: "What is the title of the black and white movie Kevin watches in both movies?", difficulty: "hard", pic: "/public/photos/25.png")
+a19 = Answer.create([{text: "'Angels with Filthy Souls'", correct: true, question_id: q19.id}, 
         {text: "'Keep the Change'", correct: false, question_id: q19.id}, 
         {text: "'Angels and Demons'", correct: false, question_id: q19.id}, 
         {text: "'Little Moe'", correct: false, question_id: q19.id}, 
@@ -188,8 +192,8 @@ a19 = Answer.create([
         {text: "'I Believe Ya'", correct: false, question_id: q19.id}
         ])           
 
-q20 = Question.create(text: "What brand of toy cars are used for a trap in the first movie?", correct: "Micro Machines", difficulty: "medium", pic: "/public/photos/33.png")
-a20 = Answer.create([
+q20 = Question.create(text: "What brand of toy cars are used for a trap in the first movie?", difficulty: "medium", pic: "/public/photos/33.png")
+a20 = Answer.create([{text: "Micro Machines", correct: true, question_id: q20.id}, 
         {text: "Hot Wheels", correct: false, question_id: q20.id}, 
         {text: "Mack Trucks", correct: false, question_id: q20.id}, 
         {text: "Fisher Price", correct: false, question_id: q20.id}, 
@@ -198,8 +202,8 @@ a20 = Answer.create([
         {text: "Twisted Metal", correct: false, question_id: q20.id}
         ])            
   
-q21 = Question.create(text: "What celebrity directs Kevin to the lobby inside the Plaza Hotel?", correct: "Donald Trump", difficulty: "easy", pic: "/public/photos/48.png")
-a21 = Answer.create([
+q21 = Question.create(text: "What celebrity directs Kevin to the lobby inside the Plaza Hotel?", difficulty: "easy", pic: "/public/photos/48.png")
+a21 = Answer.create([{text: "Donald Trump", correct: true, question_id: q21.id}, 
         {text: "George Bush", correct: false, question_id: q21.id}, 
         {text: "Jimmy Carter", correct: false, question_id: q21.id}, 
         {text: "Barack Obama", correct: false, question_id: q21.id}, 
@@ -208,8 +212,8 @@ a21 = Answer.create([
         {text: "Derek Jeter", correct: false, question_id: q21.id}
         ])            
         
-q22 = Question.create(text: "What is the name of the school that hosts the pageant in Home Alone 2?", correct: "St. Gerard's", difficulty: "hard", pic: "/public/photos/40.png")
-a22 = Answer.create([
+q22 = Question.create(text: "What is the name of the school that hosts the pageant in Home Alone 2?", difficulty: "hard", pic: "/public/photos/40.png")
+a22 = Answer.create([{text: "St. Gerard's", correct: true, question_id: q22.id}, 
         {text: "St. Paul's", correct: false, question_id: q22.id}, 
         {text: "St. John's", correct: false, question_id: q22.id}, 
         {text: "St. Colombo's", correct: false, question_id: q22.id}, 
@@ -218,8 +222,8 @@ a22 = Answer.create([
         {text: "St. Peter's", correct: false, question_id: q22.id}
         ])  
 
-q23 = Question.create(text: "What what Kevin rather do than apologize to Buzz?", correct: "kiss a toilet seat", difficulty: "medium", pic: "/public/photos/38.png")
-a23 = Answer.create([
+q23 = Question.create(text: "What what Kevin rather do than apologize to Buzz?", difficulty: "medium", pic: "/public/photos/38.png")
+a23 = Answer.create([{text: "kiss a toilet seat", correct: true, question_id: q23.id}, 
         {text: "lick a toilet seat", correct: false, question_id: q23.id}, 
         {text: "kiss a toad", correct: false, question_id: q23.id}, 
         {text: "sleep with Fuller", correct: false, question_id: q23.id}, 
@@ -228,8 +232,8 @@ a23 = Answer.create([
         {text: "eat mushroom pizza", correct: false, question_id: q23.id}
         ])          
 
-q24 = Question.create(text: "What house decor do drivers commonly hit in front of the McCallister home?", correct: "statue", difficulty: "easy", pic: "/public/photos/32.png")
-a24 = Answer.create([
+q24 = Question.create(text: "What house decor do drivers commonly hit in front of the McCallister home?", difficulty: "easy", pic: "/public/photos/32.png")
+a24 = Answer.create([{text: "statue", correct: true, question_id: q24.id}, 
         {text: "mailbox", correct: false, question_id: q24.id}, 
         {text: "hedges", correct: false, question_id: q24.id}, 
         {text: "bird bath", correct: false, question_id: q24.id}, 
@@ -238,8 +242,8 @@ a24 = Answer.create([
         {text: "Christmas tree", correct: false, question_id: q24.id}
         ])             
 
-q25 = Question.create(text: "What's Kevin's problem with Florida?", correct: "no Christmas trees", difficulty: "medium", pic: "/public/photos/35.png")
-a25 = Answer.create([
+q25 = Question.create(text: "What's Kevin's problem with Florida?", difficulty: "medium", pic: "/public/photos/35.png")
+a25 = Answer.create([{text: "no Christmas trees", correct: true, question_id: q25.id}, 
         {text: "too rainy", correct: false, question_id: q25.id}, 
         {text: "crazy men", correct: false, question_id: q25.id}, 
         {text: "no snow", correct: false, question_id: q25.id}, 
@@ -248,8 +252,8 @@ a25 = Answer.create([
         {text: "too far frome home", correct: false, question_id: q25.id}
         ])          
         
-q26 = Question.create(text: "In Home Alone 2, what event causes Peter to accidentally unplug the alarm, causing the family to sleep in?", correct: "getting camcorder battery", difficulty: "hard", pic: "/public/photos/36.png")
-a26 = Answer.create([
+q26 = Question.create(text: "In Home Alone 2, what event causes Peter to accidentally unplug the alarm, causing the family to sleep in?", difficulty: "hard", pic: "/public/photos/36.png")
+a26 = Answer.create([{text: "getting camcorder battery", correct: true, question_id: q26.id}, 
         {text: "changing lightbulb", correct: false, question_id: q26.id}, 
         {text: "unplugging space heater", correct: false, question_id: q26.id}, 
         {text: "resetting the breaker", correct: false, question_id: q26.id}, 
@@ -258,8 +262,8 @@ a26 = Answer.create([
         {text: "Kevin unplugs it to plug in a toy", correct: false, question_id: q26.id}
         ])   
         
-q27 = Question.create(text: "What Christmas event does Kevin shove Buzz, starting family drama?", correct: "pageant", difficulty: "easy", pic: "/public/photos/39.png")
-a27 = Answer.create([
+q27 = Question.create(text: "What Christmas event does Kevin shove Buzz, starting family drama?", difficulty: "easy", pic: "/public/photos/39.png")
+a27 = Answer.create([{text: "pageant", correct: true, question_id: q27.id}, 
         {text: "presents", correct: false, question_id: q27.id}, 
         {text: "dinner", correct: false, question_id: q27.id}, 
         {text: "happy hour", correct: false, question_id: q27.id}, 
@@ -268,8 +272,8 @@ a27 = Answer.create([
         {text: "seeing house lights in the neighborhood", correct: false, question_id: q27.id}
         ])  
         
-q28 = Question.create(text: "What city does Kevin accidentally fly to in Home Alone 2", correct: "New York", difficulty: "easy", pic: "/public/photos/43.png")
-a28 = Answer.create([
+q28 = Question.create(text: "What city does Kevin accidentally fly to in Home Alone 2", difficulty: "easy", pic: "/public/photos/43.png")
+a28 = Answer.create([{text: "New York", correct: true, question_id: q28.id}, 
         {text: "Miami", correct: false, question_id: q28.id}, 
         {text: "Boston", correct: false, question_id: q28.id}, 
         {text: "Las Vegas", correct: false, question_id: q28.id}, 
@@ -278,8 +282,8 @@ a28 = Answer.create([
         {text: "Atlanta", correct: false, question_id: q28.id}
         ])  
 
-q29 = Question.create(text: "Kevin's Aunt and Uncle's name in New York city?", correct: "Uncle Rob and Aunt Georgette", difficulty: "hard", pic: "/public/photos/58.png")
-a29 = Answer.create([
+q29 = Question.create(text: "Kevin's Aunt and Uncle's name in New York city?", difficulty: "hard", pic: "/public/photos/58.png")
+a29 = Answer.create([{text: "Uncle Rob and Aunt Georgette", correct: true, question_id: q29.id}, 
         {text: "Uncle Don and Aunt Georgette", correct: false, question_id: q29.id}, 
         {text: "Uncle George and Aunt Karen", correct: false, question_id: q29.id}, 
         {text: "Uncle Ron and Aunt Georgette", correct: false, question_id: q29.id}, 
@@ -288,8 +292,8 @@ a29 = Answer.create([
         {text: "Uncle Josh and Aunt Mary", correct: false, question_id: q29.id}
         ])  
 
-q30 = Question.create(text: "What smell does Harry accuse Marv of confusing for fish in the NYC fish market?", correct: "freedom", difficulty: "medium", pic: "/public/photos/44.png")
-a30 = Answer.create([
+q30 = Question.create(text: "What smell does Harry accuse Marv of confusing for fish in the NYC fish market?", difficulty: "medium", pic: "/public/photos/44.png")
+a30 = Answer.create([{text: "freedom", correct: true, question_id: q30.id}, 
         {text: "sanity", correct: false, question_id: q30.id}, 
         {text: "health", correct: false, question_id: q30.id}, 
         {text: "homeless people", correct: false, question_id: q30.id}, 
@@ -298,8 +302,8 @@ a30 = Answer.create([
         {text: "Chinese food", correct: false, question_id: q30.id}
         ])          
 
-q31 = Question.create(text: "What is Cedric's, the bellhop in Home Alone 2, actor's name?", correct: "Rob Schneider", difficulty: "medium", pic: "/public/photos/50.png")
-a31 = Answer.create([
+q31 = Question.create(text: "What is Cedric's, the bellhop in Home Alone 2, actor's name?", difficulty: "medium", pic: "/public/photos/50.png")
+a31 = Answer.create([{text: "Rob Schneider", correct: true, question_id: q31.id},
         {text: "Adam Sandler", correct: false, question_id: q31.id}, 
         {text: "Kevin James", correct: false, question_id: q31.id}, 
         {text: "Chris Tucker", correct: false, question_id: q31.id}, 
@@ -308,8 +312,8 @@ a31 = Answer.create([
         {text: "Denzel Washington", correct: false, question_id: q31.id}
         ])              
 
-q32 = Question.create(text: "What technique does Kevin practice at the hotel pool?", correct: "cannon balls", difficulty: "medium", pic: "/public/photos/51.png")
-a32 = Answer.create([
+q32 = Question.create(text: "What technique does Kevin practice at the hotel pool?", difficulty: "medium", pic: "/public/photos/51.png")
+a32 = Answer.create([{text: "cannon balls", correct: true, question_id: q32.id}, 
         {text: "pencil dives", correct: false, question_id: q32.id}, 
         {text: "jack knife", correct: false, question_id: q32.id}, 
         {text: "front flips", correct: false, question_id: q32.id}, 
@@ -318,8 +322,8 @@ a32 = Answer.create([
         {text: "belly flops", correct: false, question_id: q32.id}
         ])    
 
-q33 = Question.create(text: "What is Kevin's favorite flavor of pizza?", correct: "plain cheese", difficulty: "medium", pic: "/public/photos/29.png")
-q33 = Answer.create([
+q33 = Question.create(text: "What is Kevin's favorite flavor of pizza?", difficulty: "medium", pic: "/public/photos/29.png")
+q33 = Answer.create([{text: "plain cheese", correct: true, question_id: q33.id}, 
         {text: "supreme", correct: false, question_id: q33.id}, 
         {text: "extra cheese", correct: false, question_id: q33.id}, 
         {text: "mushroom", correct: false, question_id: q33.id}, 
@@ -328,9 +332,9 @@ q33 = Answer.create([
         {text: "pepperoni", correct: false, question_id: q33.id}
         ])   
 
-q34 = Question.create(text: "Who has the gimpy leg in the black and white movie?", correct: "Little Moe", difficulty: "hard", pic: "/public/photos/25.png")
-a34 = Answer.create([
-        {text: "Frank", correct: false, question_id: q34.id}, 
+q34 = Question.create(text: "Who has the gimpy leg in the black and white movie?", difficulty: "hard", pic: "/public/photos/25.png")
+a34 = Answer.create([{text: "Little Moe", correct: true, question_id: q34.id}, 
+        {text: "Cliff", correct: false, question_id: q34.id}, 
         {text: "Joe", correct: false, question_id: q34.id}, 
         {text: "Larry", correct: false, question_id: q34.id}, 
         {text: "Little Timmy", correct: false, question_id: q34.id},
@@ -338,8 +342,8 @@ a34 = Answer.create([
         {text: "Belinda", correct: false, question_id: q34.id}
         ])          
 
-q35 = Question.create(text: "What Christmas ornament does Kevin give pigeon lady Home Alone 2?", correct: "turtle doves", difficulty: "easy", pic: "/public/photos/54.png")
-a35 = Answer.create([
+q35 = Question.create(text: "What Christmas ornament does Kevin give pigeon lady Home Alone 2?", difficulty: "easy", pic: "/public/photos/54.png")
+a35 = Answer.create([{text: "turtle doves", correct: true, question_id: q35.id},
         {text: "orb", correct: false, question_id: q35.id}, 
         {text: "geese", correct: false, question_id: q35.id}, 
         {text: "female dancer", correct: false, question_id: q35.id}, 
@@ -348,8 +352,8 @@ a35 = Answer.create([
         {text: "home-made", correct: false, question_id: q35.id}
         ])         
    
-q36 = Question.create(text: "Who stayed on Kevin's Plaza Hotel floor?", correct: "Herbert Hoover", difficulty: "medium", pic: "/public/photos/46.png")
-a36 = Answer.create([
+q36 = Question.create(text: "Who stayed on Kevin's Plaza Hotel floor?", difficulty: "medium", pic: "/public/photos/46.png")
+a36 = Answer.create([{text: "Herbert Hoover", correct: true, question_id: q36.id},
         {text: "Donald Trump", correct: false, question_id: q36.id}, 
         {text: "Michael Jackson", correct: false, question_id: q36.id}, 
         {text: "Michael Jordan", correct: false, question_id: q36.id}, 
@@ -358,8 +362,8 @@ a36 = Answer.create([
         {text: "Derek Jeter", correct: false, question_id: q36.id}
         ])           
 
-q37 = Question.create(text: "How many scoops of ice cream does Kevin request from room service Home Alone 2?", correct: "3", difficulty: "medium", pic: "/public/photos/48.png")
-a37 = Answer.create([
+q37 = Question.create(text: "How many scoops of ice cream does Kevin request from room service Home Alone 2?", difficulty: "medium", pic: "/public/photos/48.png")
+a37 = Answer.create([{text: "3", correct: true, question_id: q37.id}, 
         {text: "1", correct: false, question_id: q37.id}, 
         {text: "2", correct: false, question_id: q37.id}, 
         {text: "2 and a half", correct: false, question_id: q37.id}, 
@@ -368,8 +372,8 @@ a37 = Answer.create([
         {text: "4 and a half", correct: false, question_id: q37.id}
         ])                  
 
-q38 = Question.create(text: "What is the toy store's name in Home Alone 2?", correct: "Duncan's Toy Chest", difficulty: "easy", pic: "/public/photos/55.png")
-a38 = Answer.create([
+q38 = Question.create(text: "What is the toy store's name in Home Alone 2?", difficulty: "easy", pic: "/public/photos/55.png")
+a38 = Answer.create([{text: "Duncan's Toy Chest", correct: true, question_id: q38.id},
         {text: "FAO Shwartz", correct: false, question_id: q38.id}, 
         {text: "Tillman's Toy Store", correct: false, question_id: q38.id}, 
         {text: "Toys-R-US", correct: false, question_id: q38.id}, 
@@ -378,8 +382,8 @@ a38 = Answer.create([
         {text: "Fisher Price Outlet", correct: false, question_id: q38.id}
         ])    
 
-q39 = Question.create(text: "What does Buzz’s pet eat?", correct: "mice guts", difficulty: "hard", pic: "/public/photos/8.png")
-a39 = Answer.create([
+q39 = Question.create(text: "What does Buzz’s pet eat?", difficulty: "hard", pic: "/public/photos/8.png")
+a39 = Answer.create([{text: "mice guts", correct: true, question_id: q39.id},
         {text: "crickets", correct: false, question_id: q39.id}, 
         {text: "worms", correct: false, question_id: q39.id}, 
         {text: "dog food", correct: false, question_id: q39.id}, 
@@ -388,8 +392,8 @@ a39 = Answer.create([
         {text: "roaches", correct: false, question_id: q39.id}
         ])  
 
-q40 = Question.create(text: "How much is the pizza delivery in Home Alone?", correct: "$122.50", difficulty: "hard", pic: "/public/photos/13.png")
-a40 = Answer.create([
+q40 = Question.create(text: "How much is the pizza delivery in Home Alone?", difficulty: "hard", pic: "/public/photos/13.png")
+a40 = Answer.create([{text: "$122.50", correct: true, question_id: q40.id}, 
         {text: "$123.50", correct: false, question_id: q40.id}, 
         {text: "$127.50", correct: false, question_id: q40.id}, 
         {text: "$132.80", correct: false, question_id: q40.id}, 
