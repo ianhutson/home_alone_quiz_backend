@@ -42,7 +42,7 @@ a4 = Answer.create([
     {text: "Goldfish", correct: false, question_id: q4.id}
     ])
 
-q5 = Question.create(text: "What did Buzz tell Kevin to pack in Home Alone?", difficulty: "medium", pic: "I:/Code/projects/home_alone_quiz/home_alone_quiz_backend/public/images/6.png")
+q5 = Question.create(text: "What did Buzz tell Kevin to pack in Home Alone?", difficulty: "medium", pic: "I:/Code/projects/home_alone_quiz/home_alone_quiz_backend/public/images/5.png")
 a5 = Answer.create([{text: "Toilet paper and water", correct: true, question_id: q5.id}, 
     {text: "Sunscreen and towels", correct: false, question_id: q5.id}, 
     {text: "Batteries and toothpaste", correct: false, question_id: q5.id}, 
