@@ -272,7 +272,7 @@ a27 = Answer.create([{text: "pageant", correct: true, question_id: q27.id},
         {text: "seeing house lights in the neighborhood", correct: false, question_id: q27.id}
         ])  
         
-q28 = Question.create(text: "What city does Kevin accidentally fly to in Home Alone 2", difficulty: "easy", pic: File.open(Rails.root + "app/assets/photos/43.png"))
+q28 = Question.create(text: "What city does Kevin accidentally fly to in Home Alone 2?", difficulty: "easy", pic: File.open(Rails.root + "app/assets/photos/43.png"))
 a28 = Answer.create([{text: "New York", correct: true, question_id: q28.id}, 
         {text: "Miami", correct: false, question_id: q28.id}, 
         {text: "Boston", correct: false, question_id: q28.id}, 
