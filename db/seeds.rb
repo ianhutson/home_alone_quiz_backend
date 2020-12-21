@@ -232,7 +232,7 @@ a23 = Answer.create([{text: "kiss a toilet seat", correct: true, question_id: q2
         {text: "eat mushroom pizza", correct: false, question_id: q23.id}
         ])          
 
-q24 = Question.create(text: "What house decor do drivers commonly hit in front of the McCallister home?", difficulty: "easy", pic: "I:/Code/projects/home_alone_quiz/home_alone_quiz_backend/public/images/32.png")
+q24 = Question.create(text: "What house decor do drivers commonly hit in front of the McCallister home?", difficulty: "easy", pic: "I:/Code/projects/home_alone_quiz/home_alone_quiz_backend/public/images/22.png")
 a24 = Answer.create([{text: "statue", correct: true, question_id: q24.id}, 
         {text: "mailbox", correct: false, question_id: q24.id}, 
         {text: "hedges", correct: false, question_id: q24.id}, 
