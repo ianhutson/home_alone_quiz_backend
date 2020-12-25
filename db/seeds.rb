@@ -401,6 +401,6 @@ a40 = Answer.create([{text: "$122.50", correct: true, question_id: q40.id},
         {text: "$122.60", correct: false, question_id: q40.id},
         {text: "$122.75", correct: false, question_id: q40.id}
         ])    
-
+# test
 
 Result.create(value: 75, difficulty: "default", name: "Harry")
