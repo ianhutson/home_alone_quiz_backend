@@ -403,4 +403,6 @@ a40 = Answer.create([{text: "$122.50", correct: true, question_id: q40.id},
         ])    
 # test
 
-Score.create(value: 75, difficulty: "default", name: "Harry")
+
+Score.create(value: 50, difficulty: "default", name: "Harry")
+Score.create(value: 55, difficulty: "default", name: "Marv")
