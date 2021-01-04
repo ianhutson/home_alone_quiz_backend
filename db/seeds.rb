@@ -62,7 +62,7 @@ a6 = Answer.create([{text: "South Bend Shovel Slayer", correct: true, question_i
     {text: "The Butcher", correct: false, question_id: q6.id}
     ])    
 
-q7 = Question.create(text: "What year did the shovel man allegedly murder his whole family and half the block?", difficulty: "medium", pic: "/Users/lauren/Desktop/code/home_alone_quiz_backend/public/images/10.png")
+q7 = Question.create(text: "What year did the shovel man allegedly murder his whole family and half the block?", difficulty: "hard", pic: "/Users/lauren/Desktop/code/home_alone_quiz_backend/public/images/10.png")
 a7 = Answer.create([ {text: "1958", correct: true, question_id: q7.id}, 
     {text: "1959", correct: false, question_id: q7.id}, 
     {text: "1960", correct: false, question_id: q7.id}, 
@@ -162,7 +162,7 @@ a16 = Answer.create([{text: "American", correct: true, question_id: q16.id},
         {text: "Frontier", correct: false, question_id: q16.id}
         ]) 
    
-q17 = Question.create(text: "Who flies first class in Home Alone?", difficulty: "medium", pic: "/Users/lauren/Desktop/code/home_alone_quiz_backend/public/images/23.png")
+q17 = Question.create(text: "Who flies first class in Home Alone?", difficulty: "hard", pic: "/Users/lauren/Desktop/code/home_alone_quiz_backend/public/images/23.png")
 a17 = Answer.create([{text: "Kevin's parents and his aunt and uncle", correct: true, question_id: q17.id}, 
         {text: "Kevin", correct: false, question_id: q17.id}, 
         {text: "Everyone", correct: false, question_id: q17.id}, 
@@ -352,7 +352,7 @@ a35 = Answer.create([{text: "turtle doves", correct: true, question_id: q35.id},
         {text: "home-made", correct: false, question_id: q35.id}
         ])         
    
-q36 = Question.create(text: "Who stayed on Kevin's Plaza Hotel floor?", difficulty: "medium", pic: "/Users/lauren/Desktop/code/home_alone_quiz_backend/public/images/46.png")
+q36 = Question.create(text: "Who stayed on Kevin's Plaza Hotel floor?", difficulty: "hard", pic: "/Users/lauren/Desktop/code/home_alone_quiz_backend/public/images/46.png")
 a36 = Answer.create([{text: "Herbert Hoover", correct: true, question_id: q36.id},
         {text: "Donald Trump", correct: false, question_id: q36.id}, 
         {text: "Michael Jackson", correct: false, question_id: q36.id}, 
