@@ -1,25 +1,30 @@
-# README
+# DESCRIPTION
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a project built for Flatiron School. It is a quiz app based on Home Alone and Home Alone 2, and it runs on a Javascript frontend and Rails API backend.
 
-Things you may want to cover:
+[Home Alone Quiz Frontend Repo](https://github.com/ianhutson/home_alone_quiz_frontend)
 
-* Ruby version
+# BUILT WITH
 
-* System dependencies
+- Javascript
+- Rails
 
-* Configuration
+# INSTALLATION
 
-* Database creation
+To install this application in your local environment, clone both front and and backend repositories. Navigate to the backend directory within your console and run the following command:
 
-* Database initialization
+```bundle && rails:db migrate && rails:db seed && rails s```
 
-* How to run the test suite
+This will start your Rails server. When it is live, open the frontend's index.html file in any browser to render the application.
 
-* Services (job queues, cache servers, search engines, etc.)
+# Contributing
 
-* Deployment instructions
+Bug reports and pull requests are welcome on GitHub at https://github.com/ianhutson/rafflemania. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
-* ...
-# home_alone_quiz_backend
+# License
+
+The app is available as open source under the terms of the MIT License.
+
+# Code of Conduct
+
+Everyone interacting in the Rafflemania on Rails project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.

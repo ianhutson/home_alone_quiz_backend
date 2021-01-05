@@ -404,5 +404,5 @@ a40 = Answer.create([{text: "$122.50", correct: true, question_id: q40.id},
 
 
 
-Score.create(value: 50, difficulty: "default", name: "Harry")
-Score.create(value: 55, difficulty: "default", name: "Marv")
+Score.create(value: 50, difficulty: "test", name: "Harry")
+Score.create(value: 55, difficulty: "test", name: "Marv")
