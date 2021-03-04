@@ -10,7 +10,9 @@ class ScoresController < ApplicationController
             render json: ScoreSerializer.new(score)
         end
     end
+
     private 
+    
     def score_params
         params.require(:score).permit(:value, :name, :difficulty)
     end
